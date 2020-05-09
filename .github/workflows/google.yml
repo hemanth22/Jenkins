@@ -56,7 +56,7 @@ jobs:
     # Creating a cluster
     - name: Create GKE Cluster
       run: |
-        gcloud container clusters create $GKE_CLUSTER --num-nodes=1 --region us-west1 --zone GKE_ZONE
+        gcloud container clusters create $GKE_CLUSTER --num-nodes=1 --zone GKE_ZONE
         
     # Deploy the Docker image to the GKE cluster
     - name: Deploy
