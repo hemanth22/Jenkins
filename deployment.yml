@@ -19,8 +19,3 @@ spec:
         image: jenkins/jenkins:centos
         ports:
         - containerPort: 8080
-        resources:
-          requests:
-            cpu: 2000m
-          limits:
-            cpu: 1000m
